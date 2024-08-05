@@ -62,14 +62,14 @@ body{
     width: 70px;
     height: 70px;
     object-fit: fill;
-    animation: efeito 0.5s alternate infinite ease-in-out;
+    animation: efeito 1s alternate infinite ease-in-out;
 }
 @keyframes efeito{
     from{
         filter: drop-shadow(0  0  0  red);
     }
     to{
-        filter: drop-shadow(0 0 50px  red);
+        filter: drop-shadow(0 0 80px  red);
     }
 }
 
