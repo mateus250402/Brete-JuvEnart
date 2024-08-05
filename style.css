@@ -26,10 +26,21 @@ body{
     flex-direction: column;
     height: 100vh;
     padding-bottom: 0%;
-    justify-content: space-around;
+    gap: 5%;
 }
 
+.sequencia{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    padding-bottom: 0%;
+    gap: 10%;
+}
+
+
 .principal{
+    padding-top: 10%;
     display: flex;
     align-items: center;
     gap: 20px;
@@ -40,6 +51,27 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 5px;
+}
+
+.live{
+    display: flex;
+    align-items: center;
+    gap: 0px;
+}
+
+.aovivo{
+    width: 70px;
+    height: 70px;
+    object-fit: fill;
+    animation: efeito 0.5s alternate infinite ease-in-out;
+}
+@keyframes efeito{
+    from{
+        filter: drop-shadow(0  0  0  red);
+    }
+    to{
+        filter: drop-shadow(0 0 30px  red);
+    }
 }
 
 .grupo{
